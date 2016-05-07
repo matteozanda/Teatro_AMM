@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Esercitazione di AMM">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Esercitazione di AMM</title>
+</head>
+
+
+
+
+
+
+<body>
+	<div class="wrapper">
+		
+		<header>
+             <a href="index.php"> <img src="../images/header.png" alt="home" title="Esercitazione di AMM"> </a>
+		</header>
+		
+		<div class="sidebar1">
+			<h2>Categorie</h2>
+			<nav><ul>
+				<li>Desktop</li>
+				<li>Laptop</li>
+				<li>Tablet</li>
+				<li>Smartphones</li>
+			</ul></nav>
+		</div>
+		
+		<div class="sidebar2">
+			<nav>
+			<h2>Gestione</h2>
+			<ul>
+				<li>Logon</li>
+				<li>Registrati</li>
+			</ul>
+			<h2>Pagine utenti</h2>
+			<ul>
+				<li><a href="visitor.html">Pagina utente visitatore</a> </li>
+				<li><a href="user.html">Pagina utente registrato</a> </li>
+				<li><a href="admin.html">Pagina di amministrazione</a> </li>
+			</ul>
+			
+			</nav>	
+		</div>	
+			
+		<div class="page">
+			<p>La pagina che si sta visualizzando &egrave una pagina di presentazione per il progetto d'esame per il corso di Amministratore di Sistema.<br/>Il corso &egrave strutturato in lezioni che spiegano i vari linguaggi e gli strumenti necessari allo sviluppo web.</p>
+
+			<p>Il mio progetto consiste nello sviluppo di un e-commerce di <b>prodotti informatici.</b></p><br/><br/>
+			<p>Le specifiche del mio progetto sono:
+			<ul>
+				<li>due sidebars laterali</li>
+				<li>layout fisso</li>
+				<li>Funzionalit&agrave javascript: Validazione ajax</li>
+			</ul>
+			</p>
+			<p>
+				Il sito deve permettere a tutti i visitatori di navigare fra gli oggetti presenti, in particolare deve permettere di effettuare una ricerca semplice per nome (o titolo) ed una ricerca avanzata, che include i diversi campi dell'oggetto (tranne quelli che contengano descrizioni testuali come la trama e la breve descrizione). 
+			</p><p>
+				Il sito deve permettere ai clienti di registrarsi per poter comprare degli articoli. Per ogni cliente, il sito deve supportare due funzionalit&agrave personalizzate: il carrello della spesa, dove un cliente pu&ograve aggiungere vari articoli prima di procedere al pagamento, e la lista degli acquisti effettuati in precedenza, mantenendo data e la lista degli oggetti che compongono ogni acquisto. Ogni utente inserisce nel sito i seguenti dati personali:
+			</p><p>
+				Nome e Cognome<br/>
+				indirizzo (per le spedizioni)<br/>
+				email
+			</p><p>
+				Inoltre, ogni utente ha la possibilit&agrave di ricaricare il suo credito per continuare gli acquisti (naturalmente questa ricarica deve essere emulata).
+				Gli articoli sono inseriti nel sito dai commercianti, che si registrano al sito indicando:
+			</p><p>
+				Nome azienda<br/>
+				Nome e Cognome del titolare<br/>
+				indirizzo della sede<br/>
+				descrizione
+			</p><p>
+			
+				Il commerciante pu&ograve incrementare il numero di articoli disponibili per un determinato oggetto (attenzione, lo stesso oggetto pu&ograve essere venduto da pi&ugrave commercianti).
+				Un cliente pu&ograve seguire le offerte di un determinato commerciante visitando la pagina del commerciante (che pu&ograve raggiungere per esempio dalla pagina che descrive un oggetto messo in vendita) tramite una funzionalit&agrave apposita.
+				Il commerciante pu&ograve inserire fino ad massimo di tre articoli in offerta, di durata limitata nel tempo (sceglietela voi), che verranno visualizzati in una sezione apposita dei clienti che lo seguono nella home dell'applicazione.  Il commerciante pu&ograve vedere la lista delle offerte attive e di quelle non attive (storico). 
+			</p><p>
+				Quando un utente acquista un prodotto, il costo dell'articolo viene sottratto al conto dell'utente, che va a finire per il 90% al commerciante e per il 10% all'amministratore del sito. Un commerciante deve essere in grado di visualizzare tutti gli articoli da lui inseriti e l'elenco delle sue vendite.
+				Il gestore del sito ha la possiblit&agrave di vedere e modificare tutti i dati di tutti gli utenti e di tutti i commercianti, nonch&egrave l'ammontare dei propri guadagni.
+			</p> 
+			
+			</div>
+		
+
+		<footer>
+			<p>cerchi & triangoli srl  -  p.iva 0123456789  -  2013  -  tutti i diritti riservati  -  <a href="http://validator.w3.org/check/referer">validator.w3.org</a> </p>
+		</footer>
+	</div>
+</body>
+

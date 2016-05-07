@@ -1,0 +1,2 @@
+Ciao <?php echo htmlspecialchars($_POST['name']); ?>.
+La tua et&agrave &egrave di <?php echo (int)$_POST['age']; ?> anni.

@@ -1,0 +1,30 @@
+<?php
+
+// stiamo creando la classe user
+
+class user{
+	private $nome
+	private $cognome
+	private $tipoUtente
+	private $annoNascita
+
+	public function __construct ($nome, $cognome, $tipo_utente, $anno_nascita)
+	{	$this->nome = $nome;
+		$this->cognome = $cognome;
+		$this->tipoUtente = $tipoUtente;
+		$this->annoNascita = $annoNascita;
+	}
+
+	public funcion getNome(){
+		return $this->nome;
+	}
+	public funcion getCognome(){
+		return $this->cognome;
+	}
+	public funcion getTipoUtente(){
+		return $this->tipoUtente;
+	}
+	public funcion getAnnoNascita(){
+		return $this->annoNascita;
+	}
+}

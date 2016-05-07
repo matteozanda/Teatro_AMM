@@ -1,0 +1,48 @@
+<?php
+
+// stiamo creando la classe computer
+/*
+Nome
+Tipologia (laptop, desktop, tablet ecc.)
+Schermo
+RAM
+CPU
+hard disk
+Sistema operativo
+Descrizione
+numero di articoli disponibili
+prezzo
+*/
+
+
+
+/* ***  FINIRE DI INSERIRE GLI ALTRI  *** */
+
+
+class user{
+	private $nome
+/*	private $tipologia
+	private $schermo
+	private $ram
+	private $cpu
+	private $hdd
+	private $os
+	private $descrizione
+	private $num_disponibili*/
+	private $prezzo
+
+
+//	public function __construct ($nome, $tipologia, $schermo, $ram, $cpu, $hdd, $os, $descrizione, $num_disponibili, $prezzo)
+	public function __construct ($nome, $prezzo)
+	{	$this->nome = $nome;
+		$this->prezzo = $prezzo;
+	}
+
+	public funcion getNome(){
+		return $this->nome;
+	}
+	public funcion getPrezzo(){
+		return $this->prezzo;
+	}
+
+}

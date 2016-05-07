@@ -1,0 +1,76 @@
+<head>
+<meta http-equip="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="Esercitazione di AMM">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Visitatore</title>
+</head>
+
+
+
+
+<body>
+	<div class="wrapper">
+		<header>
+             <a href="index.php"> <img src="../images/header.png" alt="home" title="Esercitazione di AMM"> </a>
+		</header>
+		
+		<div class="sidebar1">
+			<h2>Categorie</h2>
+			<nav><ul>
+				<li>Desktop</li>
+				<li>Laptop</li>
+				<li>Tablet</li>
+				<li>Smartphones</li>
+			</ul></nav>
+		</div>
+		
+		<div class="sidebar2">
+			<nav>
+			<h2>Gestione</h2>
+			<ul>
+				<li>Logon</li>
+				<li>Registrati</li>
+			</ul>
+			<h2>Pagine utenti</h2>
+			<ul>
+				<li><a href="visitor.html">Pagina utente visitatore</a> </li>
+				<li><a href="user.html">Pagina utente registrato</a> </li>
+				<li><a href="admin.html">Pagina di amministrazione</a> </li>
+			</ul>
+			
+			</nav>	
+		</div>	 
+			
+		<div class="page">
+			<p><h2>Benvenuto, visto quanti bei prodotti ci sono?</h2></p>
+
+			<nav>
+				<ul class="lista_ogg">
+					<li class="tab_first">
+						<div class="image"></div>
+						<p class="description">Oggetto</p>					
+					</li>
+					<li class="tab">
+						<div class="image"></div>
+						<p class="description">Oggetto</p>						
+					</li>
+					<li class="tab">
+						<div class="image"></div>
+						<p class="description">Oggetto</p>						
+					</li>
+					<li class="tab">
+						<div class="image"></div>
+						<p class="description">Oggetto</p>						
+					</li>	
+								
+				</ul>
+			</nav>
+	
+		</div>
+			
+
+		<footer>
+			<p>cerchi & triangoli srl  -  p.iva 0123456789  -  2013  -  tutti i diritti riservati  -  http://validator.w3.org/check/referer </p>
+		</footer>
+	</div>
+</body>

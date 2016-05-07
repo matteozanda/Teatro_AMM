@@ -1,0 +1,408 @@
+html, body {
+    margin: 0px; 
+    padding: 0px;
+}
+
+
+.wrapper {
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    /* border: 1px solid; */
+    border-color: black;
+    position: relative;
+    width: 1000px;
+    background-color: #eee;
+    margin-bottom: 10px;
+    min-height: 516px;
+}
+
+header{
+    margin: 5px;
+    /* border: 1px solid; */
+    border-radius: 10px;
+    height: 150px;
+}
+
+
+
+
+.sidebar1{
+    margin-left: 5px;
+    /* border: 1px solid; */
+    border-radius: 10px;
+    width: 18%;
+    background-color: #fff;
+    padding: 15px;
+    position: absolute;
+    margin-bottom: 5px;
+}
+
+.sidebar2{
+    margin-right: 5px;
+    /* border: 1px solid; */
+    border-radius: 10px;
+    width: 18%;
+    float: right;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 5px;    
+    min-height: 150px;
+}
+
+.login {
+    min-height: 150px;
+}
+
+.login .p{
+}
+
+.page{
+    margin: auto;
+    /* border: 1px solid; */
+    border-radius: 10px;
+    width: 52%;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.page_2colonne {
+    margin: 5px;
+    /* border: 1px solid; */
+    border-radius: 10px;
+    border-color: white;
+    width: 74%;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+footer {
+    /* border: 1px solid; */
+    border-radius: 10px;
+    border-color: #000;
+    margin: 5px;
+    padding-top: 19px;
+    background-color: #ccc;
+    color: darkgrey;
+    text-align: center;
+    clear: both;
+}
+
+
+.tabella{
+    margin: auto;
+    text-align: center;
+    border: 2 solid;
+    width: 100%;
+    height: 160;
+}
+
+.tr{
+    margin: auto;
+    padding: 10px;
+}
+
+.prod{
+
+}
+
+.tab_first{
+    margin: 5px;
+    width: 23%;
+    margin-left: -4px;
+    display: inline-block;
+}
+
+.tab {
+    border-left: 1 solid;
+    margin: 5px;
+    width: 23%;
+    margin-left: -4px;
+    display: inline-block;
+}
+
+.image{
+    background-image: url(immagini/tagliando.png);
+    border-radius: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 70;
+    margin-bottom: 6;
+}
+
+.image_amm{
+    padding-left: 25%;}
+
+    ul.lista_ogg{
+    display: block;
+    padding-left: 21;
+}
+
+
+p.fotoDettaglio > img {
+    max-width: 379px;
+}
+
+.description{
+    padding-left: 28%;
+    text-align: center;
+}
+
+#cat_art {
+    height: 9em;
+    list-style: none;
+    position: relative;
+    left: -22px;
+    padding: 5px;
+    width: 21em;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    margin-top: 15px;
+    border-color: #EEEEEE;
+}
+
+#cat_img {
+    position: absolute;
+    left: 6px;
+    top: 1px;
+    width: 9em;
+    height: 9em;
+    /* border: 1px solid; */
+    border-color: lightgray;
+}
+
+#image {
+    max-width: 9em;
+    max-height: 9em;
+}
+
+
+#cat_desc {
+    left: 170px;
+    position: absolute;
+    top: -15px;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 330px;
+    overflow: hidden;
+}
+
+
+#cat_price {
+    position: relative;
+    left: 170px;
+    top: 120px;
+    /* font-size: 1.2em; */
+    /* color: red; */
+    /* font-weight: bold; */
+}
+
+#cat_descr {
+    position: relative;
+    left: 170px;
+    top: 18px;
+    overflow: hidden;
+    max-height: 75px;
+    width: 324px;
+}
+
+
+#top_menu {
+    /* border: 1px solid; */
+    border-radius: 10px;
+    background-color: white;
+    margin: 5px;
+    height: 2em;
+    padding: 11px;
+}
+
+#top_menu a {
+    text-decoration: none;
+    margin-left: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+
+div#loginpage {
+    position: relative;
+    left: 4%;
+    
+}
+
+div#accedi {
+    
+}
+// ---------------------------Pagina di gestione utenti
+#lista_utenti_edit {
+    height: 6em;
+    list-style: none;
+    position: relative;
+    left: -22px;
+    padding: 5px;
+}
+
+li#lista_utenti_edit {
+    height: 5em;
+    list-style: none;
+    position: relative;
+    left: -22px;
+    padding: 5px;
+}
+
+#user_nome_edit {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+
+
+
+
+// ---------------------------Pagina di gestione articoli
+/*
+div#new_article {
+    display: block;
+    position: relative;
+    top: -60px;
+    left: 76%;
+}
+#new_article {
+    display: block;
+    position: relative;
+    top: -60px;
+    left: 76%;
+}
+*/
+#cat_img_edit {
+    position: absolute;
+    left: 6px;
+    top: 1px;
+    width: 5em;
+    height: 4.3em;
+    border: 1px solid;
+    border-color: lightgray;
+}
+
+#image_edit {
+    max-width: 80px;
+    max-height: 70px;
+}
+
+#cat_art_edit {
+    height: 5em;
+    list-style: none;
+    position: relative;
+    left: -22px;
+    padding: 5px;
+}
+
+#cat_desc_edit {
+    left: 110px;
+    position: absolute;
+    top: -7px;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#cat_descr_edit {
+    position: relative;
+    left: 188px;
+    top: -58px;
+    width: 268px;
+    max-height: 36px;
+    overflow: hidden;
+}
+
+#cat_ico_edit img {
+    padding-left: 15px;
+}
+    
+#cat_price_edit {
+    position: relative;
+    left: 106px;
+    top: -39px;
+    font-size: 1.1em;
+    color: red;
+    font-weight: bold;
+    width: 85px;
+}
+
+#cat_ico_edit {
+    position: relative;
+    left: 490px;
+    top: -78px;
+    /* font-size: 1.5em; */
+    color: red;
+    /* font-weight: bold; */
+    max-width: 200px;
+}
+
+#cat_img_edit {
+    max-width: 5em;
+    min-height: 4.5em;
+}
+
+div#cat_date_edit {
+    font-size: x-small;
+    position: relative;
+    left: 105px;
+    top: -53px;
+}
+
+#modifica_articolo img {
+    max-height: 250px;
+    max-width: 500px;
+}
+
+
+/*form*/
+input {
+    margin-left: 5px;
+    border-radius: 5px;
+    width: 18%;
+    background-color: #fff;
+    padding: 5px;   
+    margin-bottom: 5px;
+    border: 1px solid #A5A5A5
+}
+
+.page img {
+    max-width: 520px;
+}
+
+
+#modifica_articolo input {
+    margin-left: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 47%;
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#lista_riepilogo {
+    height: 9em;
+    list-style: none;
+    position: relative;
+    left: -22px;
+    padding: 5px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    margin-top: 15px;
+    border-color: #EEEEEE;
+}
+
+#lista_riepilogo #image {
+    max-width: 8em;
+    max-height: 8em;
+    float: left;
+    padding-right: 12px;
+}

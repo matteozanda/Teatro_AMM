@@ -1,0 +1,65 @@
+DA FARE:
+
+attuale:
+
+PROBLEMI DA RISOLVERE:
+  
+
+ALTA PRIORITA'
+ - transazioni (commit e rollback)
+ - funzione javascript
+ - funzione ajax
+
+
+
+
+
+
+
+ - quando un Utente non registrato cerca di prenotare biglietti:
+ 	auto-commit(0); 
+ 	query per far scalare posti disponibili dall'evento
+	utilizzare ajax per far comparire popup che invita a registrarsi
+	se(fa login): {
+		query di creazione prenotazione 
+		COMMIT}
+	else {rollback, tornare indietro}
+
+
+
+
+
+MEDIA PRIORITA'
+ - COMMENTARE TUTTO!!!!!!!!!!
+ - suddividere e gerarchizzare le classi
+ - auto de-log di un utente quando scade la sessione. (usare la voce 'connected' nel db
+ 	al login aprire le sessioni e impostare connected a 1 
+ 	quando $_SESSION(ID) non è più set allora mettere connected a 0)
+ - FAR ASSORBIRE TUTTO DAL CONTROLLER GENERICO
+ - CREARE CONTROLLER SPECIALIZZATI
+ - TOGLIERE IMPORTI BIGLIETTI DA PRENOTAZIONI
+ - nella pagina "vedi prenotati" inserisci "modifica ordine"
+
+
+BASSA PRIORITA'
+ - eliminazione articoli
+ - cambiare nomi delle funzioni nel controller, utilizzare get e set per differenziare le pubbliche dalle private
+ - migliorare grafica, aggiungere icone per le funzioni	
+
+
+
+
+
+
+
+
+
+NOTE:
+creare un controller per ogni tipo di utente, in modo da gestire le viste separatamente
+
+cambiare nomi delle funzioni nel controller, utilizzare get e set per differenziare le pubbliche dalle private
+
+
+
+
+
