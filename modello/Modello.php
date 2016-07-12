@@ -415,7 +415,7 @@ private function get_utenti()
 		return $lista_prenotazioni;
 	}
 */
-/*	public function recupera_prenotazioni_per_idUtente($id_utente) //inserisce nel vettore $risultato le righe restituite dal DBMS che matchano con l'ID cercato
+	public function recupera_prenotazioni_per_idUtente($id_utente) //inserisce nel vettore $risultato le righe restituite dal DBMS che matchano con l'ID cercato
 	{	
 		$prenotazioni_utente = $this->leggi_prenotazioni_utente($id_utente);
 		$risultato = array();
@@ -428,7 +428,7 @@ private function get_utenti()
 		}
 		return $risultato;
 	}
-*/
+
 
 }
 ?>
