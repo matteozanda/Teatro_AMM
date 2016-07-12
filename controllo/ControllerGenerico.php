@@ -270,7 +270,7 @@ if(isset($_SESSION["userID"])){$id_utente = $_SESSION["userID"];} else{ $id_uten
 		}
 */
 		// ID=20 & posti_disponibili=250 & comando=Prenota+biglietti
-/*		elseif($comando == "Prenota biglietti"){
+		elseif($comando == "Prenota biglietti"){
 			$articolo = $this->modello->recupera_articolo_per_id($id_cercato);
 			$listaPoltroncinePrenotate = $this->modello->recupera_poltroncine_prenotate($id_cercato);
 			if(isset($_SESSION["userID"])){
@@ -283,7 +283,7 @@ if(isset($_SESSION["userID"])){$id_utente = $_SESSION["userID"];} else{ $id_uten
 			//if(isset($_REQUEST["id_utente"])){$id_utente = $_REQUEST["id_utente"];} else{ $id_utente = "0";};
 			//$this->modello->scegli_posti($id_utente);
 		}
-*/
+
 		elseif($comando == "prenotaPoltroncine"){
 			if(isset($_REQUEST["id_articolo"])){$id_articolo = $_REQUEST["id_articolo"];} else{ $id_articolo = "0";};
 			if(isset($_SESSION["userID"])){$id_utente = $_SESSION["userID"];} else{ $id_utente = "0";};
