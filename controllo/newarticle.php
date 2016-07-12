@@ -91,7 +91,7 @@ mysqli_close($connessione);
 unset($connessione);
 
 
-header('Refresh: 2; URL = ../index.php?comando=catalogo')
+header('Refresh: 20; URL = ../index.php?comando=catalogo')
 ?>
 
 <br/><br/><br/>

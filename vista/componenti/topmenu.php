@@ -4,6 +4,5 @@
 	<a href="index.php?comando=chi_siamo">Chi siamo</a>
 	<a href="index.php?comando=contatti">Contatti</a>
 	<a href="index.php?comando=news">News</a>
-	<a href="index.php?comando=poltroncine">Poltroncine</a>
 	</div>
 </nav>

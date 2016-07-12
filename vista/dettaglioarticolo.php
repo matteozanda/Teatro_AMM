@@ -25,14 +25,13 @@
 						<p> <?= nl2br($articolo->testo); ?> </p>
 						<p class="fotoDettaglio"> <img src="uploads/images/<?= $articolo->foto ?>" alt="foto"/> </p>
 
-						<p> <strong><?= $messaggio ?></strong> </p>
 						<form action="index.php" method="get">
-							<label>Ancora <?= $articolo->posti_disponibili ?> posti disponibili</label><br><br>
-							<label>Prenota biglietti: <input type="text" name="quantita" size="5" /></label>
+							<label>Ancora <?= $articolo->posti_disponibili-$numPostiDisponibili; ?> posti disponibili</label><br><br>
+							
 
 							<input type="hidden" name="ID" value="<?= $articolo->id ?>" />
 							<input type="hidden" name="posti_disponibili" value="<?= $articolo->posti_disponibili ?>" />
-							<input type="submit" name="comando" value="Prenota" />
+							<input type="submit" name="comando" value="Prenota biglietti" />
 						</form>
 							<p>
 							<a href="index.php?comando=catalogo"> Torna al catalogo </a>

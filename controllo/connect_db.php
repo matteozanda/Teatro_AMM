@@ -27,7 +27,26 @@
 
     $connessione=mysqli_connect($db_host, $db_user, $db_password, $db_database);
 */
+    $db_host="localhost";
+    $db_user="zandaMatteo";
+    $db_password="pterodattilo697";
+    $db_database="amm14_zandaMatteo";
 
+    $connessione = mysqli_connect($db_host, $db_user, $db_password);
+
+    if (!$connessione) {
+        echo "L'utente non esiste";
+        $sql = "CREATE USER 'storedb@localhost' IDENTIFIED BY 'storedb1'";
+        if (mysqli_query($connessione, $sql)) {
+            echo "Utente creato";
+        } else {
+            echo "Errore nel creare l'utente: " . mysqli_error($connessione);
+        }
+
+    }
+
+    $connessione=mysqli_connect($db_host, $db_user, $db_password, $db_database);
+/*
 
     $db_host="localhost";
     $db_user="storedb";
@@ -49,7 +68,7 @@
 
     $connessione=mysqli_connect($db_host, $db_user, $db_password, $db_database);
 
-
+*/
 /*
 
     //----------------------------- DA RICONTROLLARE ED ELIMINARE SE NON FUNZIONA BENE -----------------------------

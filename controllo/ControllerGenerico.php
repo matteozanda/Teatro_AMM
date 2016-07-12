@@ -28,7 +28,7 @@ class GenericController{
 		$comando=isset($_REQUEST["comando"])? $_REQUEST["comando"] : "catalogo";
 		$id_cercato=isset($_REQUEST["ID"])? $_REQUEST["ID"] : "0";
 
-
+if(isset($_SESSION["userID"])){$id_utente = $_SESSION["userID"];} else{ $id_utente = "0";};
 //***************** TOP MENU ****************		
 		if($comando == "homepage")
 		{
@@ -47,10 +47,10 @@ class GenericController{
 		{
 			include("vista/news.php");
 		}
-		elseif($comando == "poltroncine")
+		/*elseif($comando == "poltroncine")
 		{
 			include("vista/poltroncine.php");
-		}
+		}*/
 //***************** //TOP MENU ****************	
 
 		elseif ($comando == "accedi") {
@@ -161,7 +161,7 @@ class GenericController{
 					//-------upload_file.php----------------------------------------------
 
 
-					$uploaddir = '../uploads/images/';
+					$uploaddir = 'uploads/images/';
 					$uploadfile = $uploaddir . basename($_FILES['foto_art']['name']);
 
 					if(!file_exists($uploaddir)) {
@@ -192,7 +192,7 @@ class GenericController{
 					unset($connessione);
 
 
-					header('Refresh: 1; URL = index.php?comando=catalogo');
+					header('Refresh: 2; URL = index.php?comando=catalogo');
 		}
 		
 //***************** //ADMIN ACTIONS ****************	
@@ -212,13 +212,12 @@ class GenericController{
 		elseif($comando == "dettaglioarticolo")
 		{
 			$articolo = $this->modello->recupera_articolo_per_id($id_cercato);
-			$messaggio = "";
+			$numPostiDisponibili = $this->modello->recupera_num_prenotazioni_per_idArticolo($id_cercato);
 			include("vista/dettaglioarticolo.php");
 		}
 
 
 		elseif($comando == "vedi_prenotati_per_id" ){
-
 			$prenotazioni = $this->modello->recupera_prenotazioni_per_idUtente($id_cercato);
 			//$prenotazioni = $this->modello->recupera_prenotazioni_per_idUtente($_SESSION['userID']);
 			include("vista/amministratore/riepilogo_prenotazioni_utente.php");
@@ -229,12 +228,12 @@ class GenericController{
 			include("vista/amministratore/riepilogo_prenotazioni_utente.php");
 		}
 
-
+/*
 		elseif($comando == "resoconto_prenotazioni" ){
 			$prenotazioni = $this->modello->recupera_prenotazioni_priorita_articolo();
 			include("vista/amministratore/resoconto_prenotazioni.php");
 		}
-
+*/
 		elseif($comando == "dettaglio_prenotazioni_articolo"){
 			$prenotazioni = $this->modello->recupera_prenotazioni_per_idArticolo($id_cercato);
 			include("vista/amministratore/riepilogo_prenotazioni_articolo.php");
@@ -246,7 +245,7 @@ class GenericController{
 /**************** /DELETE ARTICLE**********/
 
 
-		elseif($comando == "Prenota"){
+/*		elseif($comando == "Prenota"){
 			$quantita=isset($_REQUEST["quantita"])? $_REQUEST["quantita"] : "0";
 
 
@@ -269,12 +268,44 @@ class GenericController{
 			echo "<br/><br/><br/><br/>";
 			header('Refresh: 1; URL = index.php?comando=catalogo');
 		}
+*/
+		// ID=20 & posti_disponibili=250 & comando=Prenota+biglietti
+/*		elseif($comando == "Prenota biglietti"){
+			$articolo = $this->modello->recupera_articolo_per_id($id_cercato);
+			$listaPoltroncinePrenotate = $this->modello->recupera_poltroncine_prenotate($id_cercato);
+			if(isset($_SESSION["userID"])){
+			//$totPoltroncinePrenotate = $this->modello->recupera_tot_poltroncine_prenotate();
+			}
+			else $totPoltroncinePrenotate = 0;
+			include("vista/poltroncine.php");
+
+
+			//if(isset($_REQUEST["id_utente"])){$id_utente = $_REQUEST["id_utente"];} else{ $id_utente = "0";};
+			//$this->modello->scegli_posti($id_utente);
+		}
+*/
+		elseif($comando == "prenotaPoltroncine"){
+			if(isset($_REQUEST["id_articolo"])){$id_articolo = $_REQUEST["id_articolo"];} else{ $id_articolo = "0";};
+			if(isset($_SESSION["userID"])){$id_utente = $_SESSION["userID"];} else{ $id_utente = "0";};
+			$array = explode(",", $_REQUEST["posti"]);
+			echo "<h1>Posti prenotati:</h1> <br/><br/>";
+			
+			$risultato = $this->modello->prenotaPoltroncine($id_articolo, $id_utente, $array);
+			echo $risultato;
+			echo '<br/><br/><br/><b>Riepilogo di Prenotazione: </b><br/>Articolo num.'.$id_articolo. '<br/>Utente num.'.$id_utente. '<br/>Poltroncine num. ';
+			foreach ($array as $poltrona){
+				if($poltrona != null)echo $poltrona.", ";
+			}
+			header('Refresh: 5; URL = index.php?ID='.$id_articolo.'&comando=Prenota+biglietti');
+		}
+
+
 		elseif($comando == "annulla_prenotazione"){
 			if(isset($_REQUEST["id_articolo"])){$id_articolo = $_REQUEST["id_articolo"];} else{ $id_articolo = "0";};
 			if(isset($_REQUEST["id_utente"])){$id_utente = $_REQUEST["id_utente"];} else{ $id_utente = "0";};
 
 			$risultato = $this->modello->annulla_prenotazione($id_articolo, $id_utente);
-			header('Refresh: 1; URL = index.php?comando=resoconto_prenotazioni');
+			header('Refresh: 5; URL = index.php?ID='.$id_articolo.'&comando=Prenota+biglietti');
 		}
 
 //***************** //USER ACTIONS ****************	

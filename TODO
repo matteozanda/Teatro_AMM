@@ -4,33 +4,27 @@ attuale:
 
 PROBLEMI DA RISOLVERE:
   
+	risolvere:  http://localhost:8080/teatro_amm/index.php?comando=resoconto_prenotazioni
+
+
 
 ALTA PRIORITA'
+
+ - amministrare le prenotazioni poltroncine
+ 
  - transazioni (commit e rollback)
- - funzione javascript
  - funzione ajax
-
-
-
-
-
-
 
  - quando un Utente non registrato cerca di prenotare biglietti:
  	auto-commit(0); 
  	query per far scalare posti disponibili dall'evento
-	utilizzare ajax per far comparire popup che invita a registrarsi
-	se(fa login): {
-		query di creazione prenotazione 
-		COMMIT}
-	else {rollback, tornare indietro}
-
-
+	utilizzare ajax per l'aggiornamento delle prenotazioni di biglietto senza ricaricare la pagina
+	
+ - COMMENTARE TUTTO!!!!!!!!!!
 
 
 
 MEDIA PRIORITA'
- - COMMENTARE TUTTO!!!!!!!!!!
  - suddividere e gerarchizzare le classi
  - auto de-log di un utente quando scade la sessione. (usare la voce 'connected' nel db
  	al login aprire le sessioni e impostare connected a 1 
@@ -39,6 +33,7 @@ MEDIA PRIORITA'
  - CREARE CONTROLLER SPECIALIZZATI
  - TOGLIERE IMPORTI BIGLIETTI DA PRENOTAZIONI
  - nella pagina "vedi prenotati" inserisci "modifica ordine"
+ - eliminare le proprie prenotazioni poltroncine
 
 
 BASSA PRIORITA'

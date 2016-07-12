@@ -206,8 +206,8 @@ p.fotoDettaglio > img {
     left: 170px;
     top: 18px;
     overflow: hidden;
-    max-height: 75px;
-    width: 324px;
+    max-height: 54px;
+    width: 500px;
 }
 
 
@@ -406,3 +406,75 @@ input {
     float: left;
     padding-right: 12px;
 }
+
+/***********POLTRONCINE************/
+
+        div#poltroncine {
+            float: left;
+            display: block;
+        }
+
+        #poltroncine div:hover {background-color: aquamarine;}
+
+        #poltroncine div {
+            background-color: white;
+            font-size: xx-small;
+            width: 25px;
+            height: 10px;
+            border: solid 1px;
+            border-radius: 2px;
+            padding-top: 15px;
+            text-align: right;
+        }
+
+
+        .quadro {
+            background-color: white;
+            width: 25px;
+            height: 10px;
+            border: solid 1px;
+            border-radius: 2px;
+            padding-top: 15px;
+
+            //float: left;
+            //clear:both;
+            //display: block;
+        }
+
+
+        div#palco {
+            background-color: #73CECE;
+            width: 100%;
+            height: 30px;
+            border: solid 1px;
+            border-radius: 2px;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        div#nulla {background-color: white;  border: solid 0px;}
+
+        div#selezionato {
+            width: 216px;
+            float: left;
+            display: block;
+            left:50px;
+            position: relative;
+        }
+        div#quantiPosti {
+            width: 216px;
+            float: left;
+            display: block;
+            left:50px;
+            position: relative;
+        }
+        div#prenota {
+            top: 316px;
+            left: -10%;
+            position: relative;
+        }
+        div#legenda {
+            clear: both;
+            top: 15px;
+            position: relative;
+        }

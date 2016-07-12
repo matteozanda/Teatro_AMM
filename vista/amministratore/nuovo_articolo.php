@@ -34,7 +34,7 @@
                     <label>Carica una foto</label></br>
                     <input type="file" name="foto_art"><br></br>
 			        <label>Posti disponibili</label></br>
-			        <input type="text" name="posti_disponibili" value="250"></br></br>
+			        <input type="text" name="posti_disponibili" value="100"></br></br>
                     <div id="status">
 				        <label>Status</label></br>
 				        <select name="status">

@@ -27,15 +27,14 @@
 								?>
 								<li id="lista_riepilogo">
 									<img id="image"  src="uploads/images/<?= $articolo->getFoto() ?>" alt="foto"/>
-									<a href="index.php?comando=dettaglioarticolo&ID=<?= $articolo->getArticolo() ?>"<b><?=	$articolo->getTitolo() ?></b></a>
+									<a href="index.php?comando=Prenota+biglietti&ID=<?= $articolo->getArticolo() ?>"<b><?=	$articolo->getTitolo() ?></b></a>
 									
 									<br/>Prenotati <?=	$articolo->getNum_biglietti()?> biglietti
-									<div style="text-align: right; text-decoration: none"><a href="index.php?comando=annulla_prenotazione&id_articolo=<?= $articolo->getArticolo() ?>&id_utente=<?= $articolo->getUserID() ?>"<b>Annulla Prenotazione</b></a></div>
+									<!-- <div style="text-align: right; text-decoration: none"><a href="index.php?comando=annulla_prenotazione&id_articolo=<?= $articolo->getArticolo() ?>&id_utente=<?= $articolo->getUserID() ?>"<b>Annulla Prenotazione</b></a></div>-->
 									
-									Costo biglietto: <?=	$articolo->getPrezzo()?>
+									<br/><br/>Costo biglietto: <?=	$articolo->getPrezzo()?>
 									€. - TOT: <?=	$articolo->getCosto_tot()?>
-									€. <br/>Posti ancora disponibili: <?=	$articolo->getPosti_disponibili(); ?>
-
+									€. 
 
 								</li>
 							  
