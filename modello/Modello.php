@@ -428,7 +428,6 @@ private function get_utenti()
 		}
 		return $risultato;
 	}
-
-
+	
 }
 ?>
